@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5B4D626-9581-4231-A8FB-E91A562AF39C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Csharp_Project</RootNamespace>
+    <AssemblyName>Csharp_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\Downloads\pdfSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categorie.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DB.cs" />
+    <Compile Include="FORM_ADD_NEW_CATEGORIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_ADD_NEW_CATEGORIE.Designer.cs">
+      <DependentUpon>FORM_ADD_NEW_CATEGORIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_ALL_ORDERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_ALL_ORDERS.Designer.cs">
+      <DependentUpon>FORM_ALL_ORDERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_CUSTOMER_ORDERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_CUSTOMER_ORDERS.Designer.cs">
+      <DependentUpon>FORM_CUSTOMER_ORDERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_HOME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_HOME.Designer.cs">
+      <DependentUpon>FORM_HOME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_LOGIN.Designer.cs">
+      <DependentUpon>FORM_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_MANAGE_CATEGORIES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_MANAGE_CATEGORIES.Designer.cs">
+      <DependentUpon>FORM_MANAGE_CATEGORIES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_MANAGE_CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_MANAGE_CUSTOMER.Designer.cs">
+      <DependentUpon>FORM_MANAGE_CUSTOMER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_MANAGE_ORDER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_MANAGE_ORDER.Designer.cs">
+      <DependentUpon>FORM_MANAGE_ORDER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_MANAGE_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_MANAGE_PRODUCT.Designer.cs">
+      <DependentUpon>FORM_MANAGE_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_MANAGE_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_MANAGE_USER.Designer.cs">
+      <DependentUpon>FORM_MANAGE_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_NEW_CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_NEW_CUSTOMER.Designer.cs">
+      <DependentUpon>FORM_NEW_CUSTOMER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_NEW_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_NEW_PRODUCT.Designer.cs">
+      <DependentUpon>FORM_NEW_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_NEW_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_NEW_USER.Designer.cs">
+      <DependentUpon>FORM_NEW_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_PRODUCTS_IN_CATEGORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_PRODUCTS_IN_CATEGORY.Designer.cs">
+      <DependentUpon>FORM_PRODUCTS_IN_CATEGORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_QUANTITY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_QUANTITY.Designer.cs">
+      <DependentUpon>FORM_QUANTITY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM_UPDATE_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM_UPDATE_PRODUCT.Designer.cs">
+      <DependentUpon>FORM_UPDATE_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="FORM_ADD_NEW_CATEGORIE.resx">
+      <DependentUpon>FORM_ADD_NEW_CATEGORIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_ALL_ORDERS.resx">
+      <DependentUpon>FORM_ALL_ORDERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_CUSTOMER_ORDERS.resx">
+      <DependentUpon>FORM_CUSTOMER_ORDERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_HOME.resx">
+      <DependentUpon>FORM_HOME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_LOGIN.resx">
+      <DependentUpon>FORM_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MANAGE_CATEGORIES.resx">
+      <DependentUpon>FORM_MANAGE_CATEGORIES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MANAGE_CUSTOMER.resx">
+      <DependentUpon>FORM_MANAGE_CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MANAGE_ORDER.resx">
+      <DependentUpon>FORM_MANAGE_ORDER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MANAGE_PRODUCT.resx">
+      <DependentUpon>FORM_MANAGE_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MANAGE_USER.resx">
+      <DependentUpon>FORM_MANAGE_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_NEW_CUSTOMER.resx">
+      <DependentUpon>FORM_NEW_CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_NEW_PRODUCT.resx">
+      <DependentUpon>FORM_NEW_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_NEW_USER.resx">
+      <DependentUpon>FORM_NEW_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_PRODUCTS_IN_CATEGORY.resx">
+      <DependentUpon>FORM_PRODUCTS_IN_CATEGORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_QUANTITY.resx">
+      <DependentUpon>FORM_QUANTITY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_UPDATE_PRODUCT.resx">
+      <DependentUpon>FORM_UPDATE_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_bckg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage_Products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage_Categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage_Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage_Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_Categorie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer_Orders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quantity_Product_Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Products_In_Categorie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manages_Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_Order.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
